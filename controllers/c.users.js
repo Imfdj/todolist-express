@@ -73,7 +73,6 @@ const logOut = function(req, res) {
     })
 }
 const register = function(req, res) {
-    console.log(req.body);
     pool.getConnection((err, connection) => {
         if (err) {return err;}
         connection.query('SELECT * from user where email = ?', req.body.email, function (error, results, fields) {
