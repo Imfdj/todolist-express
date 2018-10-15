@@ -20,7 +20,7 @@
 
 ## 说明
 
-- 需要安装 mysql 配置文件为 database/db.js
+- 需要安装 mysql 配置文件为 database/db.js。附有sql文件 database/todolist.sql
 - 注册 密码用盐加密
 - api接口 参数检验 使用 joi-router
 - 测试：框架 mocha ；断言库 chai ；http请求 supertest； [测试报告](https://imfdj.github.io/todolist-express/)
