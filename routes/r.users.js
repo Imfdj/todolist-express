@@ -8,7 +8,7 @@ var router = express.Router();
 router.post('/login', {
     body: {
         password: Joi.string().min(6).max(20).required(),
-        email: Joi.string().email().required()
+        email: Joi.string()
     }
 }, function(req, res, next) {
     users.login(req, res);
